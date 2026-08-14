@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services - Admin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <h2>Adarsh Online</h2>
+
+            <a href="dashboard.html">🏠 Dashboard</a>
+
+            <a href="services.html">📋 Services</a>
+
+            <a href="#">📩 Enquiries</a>
+
+            <a href="#">👤 Profile</a>
+
+            <button onclick="logout()">
+                🚪 Logout
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <h1>Services Management</h1>
+
+            <p>Add and manage your online services.</p>
+
+
+            <!-- Add Service -->
+
+            <div class="service-form">
+
+                <h2>Add New Service</h2>
+
+                <input
+                    type="text"
+                    id="serviceName"
+                    placeholder="Service Name"
+                >
+
+                <input
+                    type="text"
+                    id="serviceDescription"
+                    placeholder="Service Description"
+                >
+
+                <input
+                    type="text"
+                    id="servicePrice"
+                    placeholder="Service Price"
+                >
+
+                <button onclick="addService()">
+                    Add Service
+                </button>
+
+            </div>
+
+
+            <!-- Service List -->
+
+            <div class="service-list">
+
+                <h2>Available Services</h2>
+
+                <div id="servicesContainer"></div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

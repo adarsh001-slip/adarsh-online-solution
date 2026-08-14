@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-$v^t83*h#bw*ix_g*-#p+6v_k7r&+gp_o#07n8wy*ar_01@*om
 
 # Development के दौरान True रखें।
 # Live deployment से पहले False करें।
-DEBUG = True
+DEBUG = False
 
 # Local development
 # Live होने पर इसमें आपका domain जोड़ना होगा।

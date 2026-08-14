@@ -27,8 +27,9 @@ DEBUG = True
 # Local development
 # Live होने पर इसमें आपका domain जोड़ना होगा।
 ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
+    "adarsh-online-solution.onrender.com",
+    "localhost",
+    "127.0.0.1",
 ]
 
 

@@ -1,6 +1,25 @@
 from django.urls import path
-from .templates import views
+from . import views
+
 
 urlpatterns = [
-    path("", views.home, name="home"),
+
+    path(
+        "",
+        views.home,
+        name="home"
+    ),
+
+    path(
+        "scholarship/",
+        views.scholarship,
+        name="scholarship"
+    ),
+
+    path(
+        "scholarship/track/",
+        views.track_scholarship,
+        name="track_scholarship"
+    ),
+
 ]
